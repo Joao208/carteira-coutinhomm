@@ -3,8 +3,8 @@ import Paragraph from "@components/Paragraph";
 import Project from "@components/Project";
 import Title from "@components/Title";
 
-import { useDeliveryMan } from "./hook";
-import * as S from "./styles";
+import { useDeliveryMan } from "@components/DeliveryMan/hook";
+import * as S from "@components/DeliveryMan/styles";
 
 export default function DeliveryMan() {
   return (
