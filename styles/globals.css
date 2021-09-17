@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "fonts.css";
+
+html,
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
