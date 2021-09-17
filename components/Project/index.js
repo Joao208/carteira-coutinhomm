@@ -1,20 +1,28 @@
+import Link from "next/link";
 import * as S from "./styles";
 
-export default function Project() {
+export default function Project({
+  type = "ltr",
+  title,
+  paragraph,
+  link = "",
+  img,
+}) {
   return (
     <S.Container>
-      <S.Card>
+      <S.Card type={type}>
         <S.Content>
-          <S.Title>Aplicativo para entregadores</S.Title>
-          <S.SubTitle>
-            Aplicativo feito para a empresa FoodZilla, que é uma empresa que
-            atua no mercado dos deliveries. Nesse aplicativo, os entregadores...
-          </S.SubTitle>
-          <S.Button>
-            <p>Ver projeto</p>
-          </S.Button>
+          <S.Title>{title}</S.Title>
+          <S.SubTitle>{paragraph}</S.SubTitle>
+          <S.ContainerButton>
+            <Link href={link}>
+              <S.Button>
+                <p>Ver projeto</p>
+              </S.Button>
+            </Link>
+          </S.ContainerButton>
         </S.Content>
-        <S.Image src="delivery_man1.png" />
+        <S.Image src={img} />
       </S.Card>
     </S.Container>
   );

@@ -38,6 +38,7 @@ export const Hello = styled.p`
 
   @media (max-width: 1098px) {
     text-align: center;
+    font-size: 50px;
   }
 `;
 
@@ -60,7 +61,6 @@ export const Paragraph = styled.p`
 `;
 
 export const ContainerTexts = styled.div`
-  height: 50%;
   width: 50%;
 
   @media (max-width: 1098px) {
@@ -69,8 +69,8 @@ export const ContainerTexts = styled.div`
 `;
 
 export const Avatar = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 
   border-radius: 200px;
 
@@ -80,7 +80,9 @@ export const Avatar = styled.img`
   margin: 0px 80px;
 
   @media (max-width: 1098px) {
-    margin: 80px 0;
+    margin: 20px 0;
+    width: 300px;
+    height: 300px;
   }
 `;
 
@@ -97,6 +99,8 @@ export const Button = styled.a`
 
   margin-right: 20px;
   margin-top: 20px;
+
+  cursor: pointer;
 `;
 
 export const Icon = styled.img`

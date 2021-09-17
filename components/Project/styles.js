@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Button = styled.div`
   width: 100%;
@@ -15,10 +15,12 @@ export const Button = styled.div`
   align-items: center;
   justify-content: center;
 
+  cursor: pointer;
+
   p {
     height: 47px;
 
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -44,6 +46,10 @@ export const Title = styled.p`
   flex-grow: 0;
 
   margin-bottom: 20px;
+
+  @media (max-width: 1098px) {
+    font-size: 25px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -60,10 +66,6 @@ export const SubTitle = styled.p`
   flex-grow: 0;
 
   margin-bottom: 20px;
-
-  @media (min-width: 1098px) {
-    margin-bottom: 120px;
-  }
 `;
 
 export const Card = styled.div`
@@ -83,6 +85,12 @@ export const Card = styled.div`
   justify-content: space-between;
 
   flex-flow: wrap-reverse;
+
+  ${({ type }) =>
+    type === "rtl" &&
+    css`
+      flex-direction: row-reverse;
+    `}
 
   @media (max-width: 1098px) {
     justify-content: center;
@@ -114,4 +122,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ContainerButton = styled.div`
+  width: 100%;
+  height: 50%;
+
+  padding-top: 14%;
 `;
