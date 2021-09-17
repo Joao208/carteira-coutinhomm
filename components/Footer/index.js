@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Button from "@components/Button";
 import * as S from "./styles";
-import { defaultChildren } from "./Defaults/children";
+import defaultChildren from "./Defaults/children";
 
 export default function Footer({
   title = "",
