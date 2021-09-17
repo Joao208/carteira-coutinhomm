@@ -1,37 +1,5 @@
 import styled, { css } from "styled-components";
 
-export const Button = styled.div`
-  width: 100%;
-  height: 100px;
-
-  background: #6889ff;
-  border-radius: 5px;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-
-  p {
-    height: 47px;
-
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-
-    text-align: center;
-
-    color: #ffffff;
-  }
-`;
-
 export const Title = styled.p`
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -46,6 +14,12 @@ export const Title = styled.p`
   flex-grow: 0;
 
   margin-bottom: 20px;
+
+  display: flex;
+
+  div {
+    margin-right: 20px;
+  }
 
   @media (max-width: 1098px) {
     font-size: 25px;
@@ -99,6 +73,14 @@ export const Card = styled.div`
 
 export const Content = styled.div`
   width: 50%;
+
+  ${({ showButton }) =>
+    !showButton &&
+    css`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    `}
 
   @media (max-width: 1098px) {
     width: 100%;

@@ -10,11 +10,11 @@ export default function ContainerHello() {
           Eu sou Mateus, Designer de Experiência do Usuário
         </S.Paragraph>
         <S.ContainerButtons>
-          <S.Button>
+          <S.Button href="http://linkedin.com/in/coutinhomm">
             <S.Icon src="linkedin.png" />
             LinkedIn
           </S.Button>
-          <S.Button>
+          <S.Button href="mailto:coutinhommwh@gmail.com">
             <S.Icon isEmail src="email.png" />
             E-mail
           </S.Button>
