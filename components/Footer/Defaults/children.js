@@ -1,6 +1,6 @@
 import * as S from "../styles";
 
-export const defaultChildren = () => {
+export default defaultChildren = () => {
   return (
     <>
       <S.Icon src="linkedin2.png" />
