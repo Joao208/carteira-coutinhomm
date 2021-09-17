@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Title = styled.p`
   text-align: center;
-  height: 120px;
 
   font-family: "Poppins", sans-serif;
   font-style: normal;

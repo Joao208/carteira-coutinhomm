@@ -2,17 +2,25 @@ import styled, { css } from "styled-components";
 
 export const ContainerHello = styled.div`
   width: 100vw;
-  height: 430px;
 
   display: flex;
   align-items: center;
 
-  padding-left: 100px;
-  padding-right: 100px;
-
   justify-content: center;
 
   flex-wrap: wrap;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 1098px) {
+    height: 430px;
+  }
+
+  @media (min-width: 1098px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 `;
 
 export const Hello = styled.p`
@@ -27,11 +35,13 @@ export const Hello = styled.p`
   flex: none;
   order: 0;
   flex-grow: 0;
+
+  @media (max-width: 1098px) {
+    text-align: center;
+  }
 `;
 
 export const Paragraph = styled.p`
-  height: 90px;
-
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -43,6 +53,10 @@ export const Paragraph = styled.p`
   flex: none;
   order: 1;
   flex-grow: 0;
+
+  @media (max-width: 1098px) {
+    text-align: center;
+  }
 `;
 
 export const ContainerTexts = styled.div`
@@ -50,7 +64,6 @@ export const ContainerTexts = styled.div`
   width: 50%;
 
   @media (max-width: 1098px) {
-    background: red;
     width: 100%;
   }
 `;
@@ -83,6 +96,7 @@ export const Button = styled.a`
   font-size: 25px;
 
   margin-right: 20px;
+  margin-top: 20px;
 `;
 
 export const Icon = styled.img`
@@ -109,4 +123,9 @@ export const Icon = styled.img`
 
 export const ContainerButtons = styled.div`
   display: flex;
+
+  @media (max-width: 1098px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;

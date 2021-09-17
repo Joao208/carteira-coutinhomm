@@ -7,8 +7,6 @@
 html,
 body {
   background-color: #000;
-  display: flex;
-  justify-content: center;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -16,6 +14,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+div {
 }
 
 * {
