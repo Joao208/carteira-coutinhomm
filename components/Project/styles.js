@@ -66,6 +66,12 @@ export const Card = styled.div`
       flex-direction: row-reverse;
     `}
 
+  ${({ type }) =>
+    type === "center" &&
+    css`
+      flex-direction: column-reverse;
+    `}
+
   @media (max-width: 1098px) {
     justify-content: center;
   }
@@ -82,6 +88,12 @@ export const Content = styled.div`
       justify-content: center;
     `}
 
+  ${({ type }) =>
+    type === "center" &&
+    css`
+      width: 100%;
+    `}
+
   @media (max-width: 1098px) {
     width: 100%;
   }
@@ -96,6 +108,13 @@ export const Image = styled.img`
   flex-grow: 0;
 
   object-fit: contain;
+
+  ${({ type }) =>
+    type === "center" &&
+    css`
+      width: 1216.23px;
+      height: 480.31px;
+    `}
 `;
 
 export const Container = styled.div`

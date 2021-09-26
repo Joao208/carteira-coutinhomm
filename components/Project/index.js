@@ -16,7 +16,7 @@ export default function Project({
   return (
     <S.Container>
       <S.Card {...props} type={type}>
-        <S.Content showButton={showButton}>
+        <S.Content type={type} showButton={showButton}>
           {showCount ? (
             <S.Title>
               <Number value={count} /> {title}
@@ -31,7 +31,7 @@ export default function Project({
             </S.ContainerButton>
           )}
         </S.Content>
-        <S.Image src={img} />
+        <S.Image type={type} src={img} />
       </S.Card>
     </S.Container>
   );
