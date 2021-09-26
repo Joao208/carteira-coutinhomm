@@ -23,7 +23,11 @@ export default function DeliveryMan() {
           count={index + 1}
         />
       ))}
-      <Footer title="Página inicial" link="/">
+      <Footer
+        onClick={() => (window.location.href = "/projects/FoodDelivery")}
+        title="Página inicial"
+        link="/"
+      >
         <p style={{ marginRight: "20px" }}>Próximo projeto</p>
         <S.Icon src="/arrow_left.png" />
       </Footer>

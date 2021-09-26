@@ -24,7 +24,7 @@ export default function Dashboard() {
         />
       ))}
       <Footer title="Página inicial" link="/">
-        <p style={{ marginRight: "20px" }}>Próximo projeto</p>
+        <p style={{ marginRight: "20px" }}>Entre em contato comigo</p>
         <S.Icon src="/arrow_left.png" />
       </Footer>
     </>
