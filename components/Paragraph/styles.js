@@ -13,11 +13,16 @@ export const Paragraph = styled.p`
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 70px 80px;
 
   width: 90%;
 
   @media (max-width: 1098px) {
     font-size: 20px;
+
+    width: 100%;
+  }
+
+  @media (min-width: 1098px) {
+    margin: 70px 80px;
   }
 `;

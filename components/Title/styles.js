@@ -7,7 +7,6 @@ export const Title = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
-  line-height: 120px;
 
   color: #ffffff;
 
@@ -19,5 +18,9 @@ export const Title = styled.p`
 
   @media (max-width: 1098px) {
     font-size: 50px;
+  }
+
+  @media (min-width: 1098px) {
+    line-height: 120px;
   }
 `;

@@ -31,7 +31,7 @@ export const Button = styled.div`
     color: #ffffff;
 
     @media (max-width: 1098px) {
-      font-size: 30px;
+      font-size: 21px;
     }
   }
 `;
