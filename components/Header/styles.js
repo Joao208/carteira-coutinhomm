@@ -10,7 +10,9 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 80px 0 80px;
+  @media (min-width: 800px) {
+    padding: 0 80px 0 80px;
+  }
 `;
 
 export const Sessions = styled.div`
@@ -23,6 +25,7 @@ export const Sessions = styled.div`
   justify-content: right;
 
   @media (max-width: 800px) {
+    justify-content: center;
     width: 100%;
   }
 `;
@@ -52,5 +55,7 @@ export const Link = styled.a`
 
   color: #ffffff;
 
-  margin-right: 60px;
+  text-align: center;
+
+  margin: 0 20px;
 `;
