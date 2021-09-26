@@ -40,6 +40,12 @@ export const SubTitle = styled.p`
   flex-grow: 0;
 
   margin-bottom: 20px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 `;
 
 export const Card = styled.div`
@@ -59,6 +65,8 @@ export const Card = styled.div`
   justify-content: space-between;
 
   flex-flow: wrap-reverse;
+
+  align-items: center;
 
   ${({ type }) =>
     type === "rtl" &&

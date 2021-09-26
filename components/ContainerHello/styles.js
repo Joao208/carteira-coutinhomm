@@ -14,10 +14,6 @@ export const ContainerHello = styled.div`
   padding-right: 20px;
 
   @media (min-width: 1098px) {
-    height: 430px;
-  }
-
-  @media (min-width: 1098px) {
     padding-left: 100px;
     padding-right: 100px;
   }

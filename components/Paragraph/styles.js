@@ -16,6 +16,12 @@ export const Paragraph = styled.p`
 
   width: 90%;
 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+
   @media (max-width: 1098px) {
     font-size: 20px;
 

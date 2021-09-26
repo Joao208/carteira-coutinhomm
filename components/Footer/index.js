@@ -8,10 +8,11 @@ export default function Footer({
   link = "",
   children = defaultChildren(),
   onClick = () => (window.location.href = "https://linkedin.com/in/coutinhomm"),
+  props = {},
 }) {
   return (
     <>
-      <S.Container>
+      <S.Container {...props}>
         <Button onClick={onClick} props={{ style: { width: "50%" } }}>
           {children}
         </Button>
