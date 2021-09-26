@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Button from "@components/Button";
 import * as S from "./styles";
@@ -10,11 +11,22 @@ export default function Footer({
   onClick = () => (window.location.href = "https://linkedin.com/in/coutinhomm"),
   props = {},
 }) {
-  let isMobile;
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" && window.innerWidth <= 800
+  );
 
-  if (typeof window !== "undefined") {
-    isMobile = window.screen.width < 800;
-  }
+  useEffect(() => {
+    typeof window !== "undefined" &&
+      window.addEventListener("resize", () =>
+        setIsMobile(typeof window !== "undefined" && window.innerWidth <= 800)
+      );
+    return () => {
+      typeof window !== "undefined" &&
+        window.removeEventListener("resize", () =>
+          setIsMobile(typeof window !== "undefined" && window.innerWidth <= 800)
+        );
+    };
+  }, []);
 
   return (
     <>
